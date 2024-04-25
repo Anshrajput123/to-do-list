@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="date-time">
+    <h1 class="date"> </h1>
+    <h1 class="month"> </h1>
+    </div>
+    <form class="row1">
+        <input type="text" id="input-box" placeholder="add your task...">
+        <button onclick="addtask()" class="button1">+</button>
+    </form>
+    
+    <div class="row2">
+        <div class="time"></div>
+        <div class="name">to-do list</div>
+        <div class="status">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
+    </div>
+    <ul id="list-container" >
+        <!-- <li class="checked"><div>Task 1</div><div class="right-wali"><div class="trash-can"><i class="fa-regular fa-trash-can"></i></div></div></li>
+        <li><div>Task 1</div><div class="right-wali"><div ><img class="dust" src="/dustbin.png" alt=""></div></div></li>
+        <li><div>Task 1</div><div class="right-wali"><div ><img class="dust" src="/dustbin.png" alt=""></div></div></li> -->
+    </ul>
+    <script src="main.js"></script>
+</body>
+</html>
